@@ -1,0 +1,61 @@
+Create a professional and easy-to-understand flowchart for a “Pharmacy – Medicine Sale & Billing System”. The flowchart must represent the complete process from entering medicine details to generating the final customer bill. I want that flowchart in pic format
+
+Use standard flowchart symbols correctly:
+
+Oval: Start / Stop
+Parallelogram: Input / Output
+Rectangle: Process / Calculation
+Diamond: Decision / Condition
+Arrow: Direction of the process
+Follow this exact sequence:
+START ↓
+Enter Medicine Details
+Medicine ID, Medicine Name, Price, Expiry Date, Available Stock
+↓
+Store Medicine Details
+↓
+Enter Customer Details
+Customer ID, Customer Name, Phone Number
+↓
+Select Medicine
+↓
+Enter Required Quantity
+↓
+Check Stock Availability ↓
+Decision: Is Required Quantity ≤ Available Stock?
+NO → Display “Insufficient Stock” → STOP
+YES → Calculate Sale Amount = Price × Quantity
+↓
+Update Stock = Available Stock − Quantity Sold
+↓
+Calculate Subtotal
+↓
+Decision: Is Discount Applicable?
+YES → Calculate Discount → Subtract Discount
+NO → Continue without discount
+↓
+Decision: Is GST/Tax Applicable?
+YES → Calculate GST/Tax
+NO → Continue without GST/Tax
+↓
+Calculate Final Bill Amount
+Final Bill = Subtotal − Discount + GST/Tax
+↓
+Display Final Bill
+Show Customer Details, Medicine Details, Quantity, Price, Sale Amount, Subtotal, Discount, GST/Tax and Final Amount
+↓
+Save Sale Details and Updated Stock
+↓
+Generate / Print Bill
+↓
+STOP
+Important requirements:
+Arrange the flowchart vertically from top to bottom.
+Use clear and readable text inside every symbol.
+Every decision diamond must have clearly labelled YES and NO arrows.
+The NO branch of the stock decision must go directly to “Insufficient Stock” and then STOP.
+Keep all calculations inside process rectangles.
+Use proper arrows and avoid crossing lines.
+Make the flowchart clean, neat, symmetrical, and suitable for a college project report or presentation.
+Do not add unnecessary steps or features.
+Ensure the final flowchart follows the exact logic given above.

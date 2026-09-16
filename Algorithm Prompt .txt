@@ -1,0 +1,8 @@
+Write a simple and easy-to-understand algorithm for a Pharmacy – Medicine Sale & Billing System step by step in proper way
+
+The algorithm should include the following features:
+Medicine Details – Enter and store medicine name, medicine ID, price, expiry date, and available stock.
+Customer Details – Enter customer name, customer ID, phone number, and other required details.
+Quantity – Enter the quantity of medicine required and check whether sufficient stock is available.
+Sale – Select the medicine, enter the quantity, calculate the sale amount, and reduce the medicine stock after the sale.
+Bill Calculation – Calculate subtotal, discount (if applicable), tax/GST (if applicable), and final bill amount.

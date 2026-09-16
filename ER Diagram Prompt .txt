@@ -1,0 +1,126 @@
+ER Diagram Prompt
+
+Create a professional, academically correct, high-resolution ER (Entity–Relationship) diagram for a “Pharmacy – Medicine Sale & Billing System”.
+The diagram should be designed in standard Chen ER notation and should clearly show entities, attributes, relationships, primary keys, foreign keys, and cardinalities.
+
+1. Use these standard ER symbols
+Rectangle = Entity
+Oval = Attribute
+Diamond = Relationship
+Underlined attribute = Primary Key (PK)
+(FK) = Foreign Key
+1 : N = One-to-Many
+1 : 1 = One-to-One
+Connecting lines must connect ENTITY ↔ RELATIONSHIP ↔ ENTITY only.
+Do NOT connect relationships to attributes.
+
+2. ENTITIES AND ATTRIBUTES
+CUSTOMER
+Attributes:
+Customer_ID (PK)
+Customer_Name
+Phone_Number
+Address
+SALE
+Attributes:
+Sale_ID (PK)
+Sale_Date
+Customer_ID (FK)
+Subtotal
+Discount
+GST_Tax
+Final_Amount
+BILL
+Attributes:
+Bill_ID (PK)
+Sale_ID (FK)
+Bill_Date
+Total_Amount
+Payment_Mode
+MEDICINE
+Attributes:
+Medicine_ID (PK)
+Medicine_Name
+Price
+Expiry_Date
+Available_Stock
+SALE_ITEM
+Attributes:
+Sale_Item_ID (PK)
+Sale_ID (FK)
+Medicine_ID (FK)
+Quantity
+Unit_Price
+Sale_Amount
+SUPPLIER
+Attributes:
+Supplier_ID (PK)
+Supplier_Name
+Phone_Number
+Address
+PHARMACIST
+Attributes:
+Pharmacist_ID (PK)
+Pharmacist_Name
+Phone_Number
+Qualification
+
+3. EXACTLY 7 PROPER ENTITY RELATIONSHIPS
+Relationship 1
+CUSTOMER — MAKES — SALE
+Cardinality: 1 : N
+One customer can make many sales, while each sale belongs to one customer.
+Relationship 2
+SALE — GENERATES — BILL
+Cardinality: 1 : 1
+One sale generates one bill, and each bill belongs to one sale.
+Relationship 3
+SALE — CONTAINS — SALE_ITEM
+Cardinality: 1 : N
+One sale can contain many sale items, while each sale item belongs to one sale.
+Relationship 4
+MEDICINE — IS_INCLUDED_IN — SALE_ITEM
+Cardinality: 1 : N
+One medicine can appear in many sale items, while each sale item refers to one medicine.
+Relationship 5
+SUPPLIER — SUPPLIES — MEDICINE
+Cardinality: 1 : N
+One supplier can supply many medicines, while each medicine is supplied by one supplier.
+Relationship 6
+PHARMACIST — PROCESSES — SALE
+Cardinality: 1 : N
+One pharmacist can process many sales, while each sale is processed by one pharmacist.
+Relationship 7
+PHARMACIST — MANAGES — MEDICINE
+Cardinality: 1 : N
+One pharmacist can manage many medicine records, while each medicine record is managed by one pharmacist.
+
+4. Recommended Layout
+Arrange the diagram cleanly as follows:
+Top row:
+CUSTOMER → MAKES → SALE → GENERATES → BILL
+Middle row:
+MEDICINE → IS_INCLUDED_IN → SALE_ITEM
+Bottom-left:
+SUPPLIER → SUPPLIES → MEDICINE
+Right/bottom:
+PHARMACIST → PROCESSES → SALE
+PHARMACIST → MANAGES → MEDICINE
+Keep SALE and SALE_ITEM near the center because they are the main entities of the billing system.
+
+5. Important Visual Requirements
+Every relationship must connect two entities only.
+Do not connect a relationship diamond directly to an attribute oval.
+Do not duplicate any relationship.
+Do not show “SUPPLIER — SUPPLIES — MEDICINE” twice.
+Do not use SALE_ITEM — PROCESSES — PHARMACIST; the correct relationship is PHARMACIST — PROCESSES — SALE.
+Clearly show all 1:N and 1:1 cardinalities beside the connecting lines.
+Keep PK attributes underlined.
+Clearly label FK attributes.
+Keep attribute ovals close to their corresponding entity.
+Avoid crossing or overlapping lines.
+Use straight, clean connector lines.
+Use a white background and professional academic colors.
+Make all text large, sharp, and readable.
+Include a small Legend explaining Entity, Attribute, Relationship, PK, FK, 1:N and 1:1.
+Add the title “Pharmacy – Medicine Sale & Billing System” and subtitle “ER Diagram” at the top.

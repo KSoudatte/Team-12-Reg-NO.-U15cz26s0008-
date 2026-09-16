@@ -1,0 +1,60 @@
+Algorithm: Pharmacy – Medicine Sale & Billing System
+
+Step 1: Start the program.
+
+Step 2: Enter the Medicine Details:
+Medicine ID
+Medicine Name
+Price
+Expiry Date
+Available Stock
+
+Step 3: Store the medicine details in the system.
+
+Step 4: Enter the Customer Details:
+Customer ID
+Customer Name
+Phone Number
+
+Step 5: Select the medicine that the customer wants to purchase.
+
+Step 6: Enter the required quantity of the medicine.
+
+Step 7: Check whether the required quantity is available in stock.
+
+Step 8: If the required quantity is greater than the available stock, display “Insufficient Stock” and stop the sale.
+
+Step 9: If sufficient stock is available, calculate the medicine sale amount:
+Sale Amount = Price × Quantity
+
+Step 10: Add the sale amount to the customer's bill.
+
+Step 11: Reduce the sold quantity from the available stock:
+Updated Stock = Available Stock − Quantity Sold
+Step 12: Calculate the Subtotal of all medicines purchased.
+
+Step 13: Check whether a discount is applicable.
+
+Step 14: If applicable, calculate and subtract the discount from the subtotal.
+
+Step 15: Calculate GST/Tax, if applicable.
+
+Step 16: Calculate the final bill amount:
+Final Bill = Subtotal − Discount + GST/Tax
+
+Step 17: Display the Final Bill containing:
+Customer details
+Medicine details
+Quantity
+Price
+Sale amount
+Subtotal
+Discount
+GST/Tax
+Final bill amount
+
+Step 18: Save/update the sale details and medicine stock.
+
+Step 19: Generate the bill for the customer.
+
+Step 20: Stop the program.
